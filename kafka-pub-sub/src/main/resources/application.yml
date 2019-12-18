@@ -33,3 +33,26 @@ kafka:
       "[auto.offset.reset]": latest
       "[fetch.max.bytes]": 52428800
       "[fetch.max.wait.ms]": 500
+  consumer-with-autocommit-batch:
+    topic: topic2
+    concurrency: 10
+    retry-count: 5
+    timeout-millis: 30000
+    state-expiration-minutes: 120
+    sync-commit: true
+    sync-commit-timeout-second: 5
+    backoffIntervalMillis: 1000
+    props:
+      "[bootstrap.servers]": 127.0.0.1:9092,127.0.0.1:9093
+      "[value.deserializer]": org.springframework.kafka.support.serializer.JsonDeserializer
+      "[key.deserializer]": org.apache.kafka.common.serialization.StringDeserializer
+      "[spring.json.trusted.packages]": com.turkcell.workshop.kafka.commons.dto
+      "[group.id]": ConsumerGroup2
+      "[max.poll.records]": 5
+      "[max.poll.interval.ms]": 30000
+      "[session.timeout.ms]": 10000
+      "[heartbeat.interval.ms]": 3000
+      "[enable.auto.commit]": true
+      "[auto.offset.reset]": latest
+      "[fetch.max.bytes]": 52428800
+      "[fetch.max.wait.ms]": 500

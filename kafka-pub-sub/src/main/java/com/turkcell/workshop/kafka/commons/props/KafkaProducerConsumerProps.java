@@ -15,4 +15,5 @@ import org.springframework.stereotype.Component;
 public class KafkaProducerConsumerProps {
     private Consumer consumerWithAutoCommit;
     private Producer producer;
+    private Consumer consumerWithAutoCommitBatch;
 }
