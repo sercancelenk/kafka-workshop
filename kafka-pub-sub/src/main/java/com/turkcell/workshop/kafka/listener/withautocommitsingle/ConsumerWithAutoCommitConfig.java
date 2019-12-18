@@ -1,4 +1,4 @@
-package com.turkcell.workshop.kafka.listener.withautocommit;
+package com.turkcell.workshop.kafka.listener.withautocommitsingle;
 
 import com.turkcell.workshop.kafka.commons.props.KafkaProducerConsumerProps;
 import lombok.RequiredArgsConstructor;

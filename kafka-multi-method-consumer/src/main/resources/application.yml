@@ -1,0 +1,6 @@
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.type.mapping: integerMessage:com.turkcell.workshop.kafka.dto.IntegerMessage,stringMessage:com.turkcell.workshop.kafka.dto.StringMessage

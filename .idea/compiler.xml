@@ -6,16 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="kafka-multi-method-consumer" />
+        <module name="customer-service" />
+        <module name="subscription-service" />
+        <module name="request-reply-common" />
+        <module name="kafka-transaction" />
         <module name="kafka-pub-sub" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="customer-service" target="1.8" />
+      <module name="kafka-multi-method-consumer" target="1.8" />
       <module name="kafka-pub-sub" target="1.8" />
+      <module name="kafka-transaction" target="1.8" />
+      <module name="request-reply-common" target="1.8" />
+      <module name="subscription-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="customer-service" options="-parameters" />
+      <module name="kafka-multi-method-consumer" options="-parameters" />
       <module name="kafka-pub-sub" options="-parameters" />
+      <module name="kafka-transaction" options="-parameters" />
+      <module name="request-reply-common" options="-parameters" />
+      <module name="subscription-service" options="-parameters" />
     </option>
   </component>
 </project>

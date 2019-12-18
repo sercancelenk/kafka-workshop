@@ -1,4 +1,4 @@
-package com.turkcell.workshop.kafka.listener.withautocommit;
+package com.turkcell.workshop.kafka.listener.withautocommitsingle;
 
 
 import org.springframework.kafka.annotation.KafkaListener;

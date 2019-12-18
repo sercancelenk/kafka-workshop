@@ -7,6 +7,13 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/kafka-pub-sub/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-multi-method-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-reply-template/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-reply-template-step2/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-request-reply/request-reply-common/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-request-reply/customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-request-reply/subscription-service/pom.xml" />
       </list>
     </option>
   </component>

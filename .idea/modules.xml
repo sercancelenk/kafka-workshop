@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/kafka-request-reply/customer-service/customer-service.iml" filepath="$PROJECT_DIR$/kafka-request-reply/customer-service/customer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-multi-method-consumer/kafka-multi-method-consumer.iml" filepath="$PROJECT_DIR$/kafka-multi-method-consumer/kafka-multi-method-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-pub-sub/kafka-pub-sub.iml" filepath="$PROJECT_DIR$/kafka-pub-sub/kafka-pub-sub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-transaction/kafka-transaction.iml" filepath="$PROJECT_DIR$/kafka-transaction/kafka-transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/kafka-workshop.iml" filepath="$PROJECT_DIR$/.idea/kafka-workshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-request-reply/request-reply-common/request-reply-common.iml" filepath="$PROJECT_DIR$/kafka-request-reply/request-reply-common/request-reply-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-request-reply/subscription-service/subscription-service.iml" filepath="$PROJECT_DIR$/kafka-request-reply/subscription-service/subscription-service.iml" />
     </modules>
   </component>
 </project>
