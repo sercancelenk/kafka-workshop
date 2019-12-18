@@ -23,7 +23,7 @@ kafka:
       "[bootstrap.servers]": 127.0.0.1:9092,127.0.0.1:9093
       "[value.deserializer]": org.springframework.kafka.support.serializer.JsonDeserializer
       "[key.deserializer]": org.apache.kafka.common.serialization.StringDeserializer
-      "[spring.json.trusted.packages]": com.turkcell.workshop.kafka.dto
+      "[spring.json.trusted.packages]": com.turkcell.workshop.kafka.commons.dto
       "[group.id]": ConsumerGroup1
       "[max.poll.records]": 100
       "[max.poll.interval.ms]": 30000
