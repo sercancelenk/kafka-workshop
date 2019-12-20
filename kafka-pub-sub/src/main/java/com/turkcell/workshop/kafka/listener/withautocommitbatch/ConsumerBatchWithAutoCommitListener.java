@@ -28,7 +28,7 @@ public class ConsumerBatchWithAutoCommitListener {
     containerFactory = "consumerBatchWithAutoCommitListenerFactory")
     public void receive(@Payload List<String> messages,
                         @Header(KafkaHeaders.RECEIVED_PARTITION_ID) List<Integer> partitions,
-                        @Header(KafkaHeaders.OFFSET) List<Long> offsets, Acknowledgment ack) {
+                        @Header(KafkaHeaders.OFFSET) List<Long> offsets) {
 
         log.info("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
         log.info("beginning to consume batch messages");
@@ -42,8 +42,6 @@ public class ConsumerBatchWithAutoCommitListener {
 
             latch.countDown();
         }
-
-        ack.acknowledge();
 
         log.info("all batch messages consumed");
     }

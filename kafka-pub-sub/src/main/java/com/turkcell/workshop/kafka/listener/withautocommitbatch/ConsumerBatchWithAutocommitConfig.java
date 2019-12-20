@@ -35,7 +35,7 @@ public class ConsumerBatchWithAutocommitConfig {
         ConcurrentKafkaListenerContainerFactory<String, String> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerBatchWithAutocommitConsumerFactory());
         factory.getContainerProperties().setMissingTopicsFatal(false);
-        factory.getContainerProperties().setAckMode(ContainerProperties.AckMode.MANUAL);
+        factory.getContainerProperties().setAckMode(ContainerProperties.AckMode.BATCH);
         factory.getContainerProperties().setSyncCommits(kafkaProducerConsumerProps.getConsumerWithAutoCommitBatch().isSyncCommit());
         factory.getContainerProperties().setSyncCommitTimeout(Duration.ofSeconds(kafkaProducerConsumerProps.getConsumerWithAutoCommitBatch().getSyncCommitTimeoutSecond()));
         factory.setConcurrency(kafkaProducerConsumerProps.getConsumerWithAutoCommitBatch().getConcurrency());
