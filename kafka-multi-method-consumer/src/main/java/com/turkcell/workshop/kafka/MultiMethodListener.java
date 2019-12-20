@@ -7,7 +7,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
 @Component
-@KafkaListener(id = "multiGroup", topics = {"itopic", "stopic"})
+@KafkaListener(id = "multiGroup", topics = {"itopic"})
 public class MultiMethodListener {
 
     @KafkaHandler

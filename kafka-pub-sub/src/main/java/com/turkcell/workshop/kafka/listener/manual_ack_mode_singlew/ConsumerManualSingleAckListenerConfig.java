@@ -41,7 +41,7 @@ public class ConsumerManualSingleAckListenerConfig {
         ConcurrentKafkaListenerContainerFactory<String, String> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
         factory.getContainerProperties().setMissingTopicsFatal(false);
-        factory.getContainerProperties().setAckMode(ContainerProperties.AckMode.MANUAL_IMMEDIATE);
+        factory.getContainerProperties().setAckMode(ContainerProperties.AckMode.MANUAL);
         factory.getContainerProperties().setSyncCommits(kafkaProducerConsumerProps.getConsumerWithManualAckSingle().isSyncCommit());
         factory.getContainerProperties().setSyncCommitTimeout(Duration.ofSeconds(kafkaProducerConsumerProps.getConsumerWithManualAckSingle().getSyncCommitTimeoutSecond()));
         factory.setConcurrency(kafkaProducerConsumerProps.getConsumerWithManualAckSingle().getConcurrency());

@@ -22,7 +22,7 @@ public class KafkaController {
 
     @PostMapping(path = "/send/string/{what}")
     public void sendStringMessage(@PathVariable String what) {
-        this.template.send("stopic", new StringMessage(what));
+        this.template.send("itopic", new StringMessage(what));
     }
 
     @PostMapping(path = "/send/unknown/{what}")

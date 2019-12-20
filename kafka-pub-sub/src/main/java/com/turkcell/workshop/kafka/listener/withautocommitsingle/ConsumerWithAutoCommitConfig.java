@@ -54,11 +54,11 @@ public class ConsumerWithAutoCommitConfig {
         factory.getContainerProperties().setSyncCommits(kafkaProducerConsumerProps.getConsumerWithAutoCommit().isSyncCommit());
         factory.getContainerProperties().setSyncCommitTimeout(Duration.ofSeconds(kafkaProducerConsumerProps.getConsumerWithAutoCommit().getSyncCommitTimeoutSecond()));
         factory.setConcurrency(kafkaProducerConsumerProps.getConsumerWithAutoCommit().getConcurrency());
-        factory.setRetryTemplate(retryTemplate());
-        factory.setRecoveryCallback(context -> {
-            log.error("RetryPolicy limit has been exceeded! You should really handle this better.");
-            return null;
-        });
+//        factory.setRetryTemplate(retryTemplate());
+//        factory.setRecoveryCallback(context -> {
+//            log.error("RetryPolicy limit has been exceeded! You should really handle this better.");
+//            return null;
+//        });
 
         return factory;
     }

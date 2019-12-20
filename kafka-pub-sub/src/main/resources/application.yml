@@ -71,11 +71,11 @@ kafka:
       "[key.deserializer]": org.apache.kafka.common.serialization.StringDeserializer
       "[spring.json.trusted.packages]": com.turkcell.workshop.kafka.commons.dto
       "[group.id]": ConsumerGroup2
-      "[max.poll.records]": 5
+      "[max.poll.records]": 500
       "[max.poll.interval.ms]": 30000
       "[session.timeout.ms]": 10000
       "[heartbeat.interval.ms]": 3000
-      "[enable.auto.commit]": true
+      "[enable.auto.commit]": false
       "[auto.offset.reset]": latest
       "[fetch.max.bytes]": 52428800
       "[fetch.max.wait.ms]": 500
