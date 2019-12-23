@@ -23,6 +23,7 @@ public class ListenerConfig {
         configurer.configure(factory, kafkaConsumerFactory);
         factory.setBatchListener(true);
         factory.setMessageConverter(batchConverter());
+
         return factory;
     }
 

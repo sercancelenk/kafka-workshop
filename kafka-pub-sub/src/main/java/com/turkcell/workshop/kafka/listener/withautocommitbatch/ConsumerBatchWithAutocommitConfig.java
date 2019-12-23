@@ -39,7 +39,8 @@ public class ConsumerBatchWithAutocommitConfig {
         factory.getContainerProperties().setSyncCommits(kafkaProducerConsumerProps.getConsumerWithAutoCommitBatch().isSyncCommit());
         factory.getContainerProperties().setSyncCommitTimeout(Duration.ofSeconds(kafkaProducerConsumerProps.getConsumerWithAutoCommitBatch().getSyncCommitTimeoutSecond()));
         factory.setConcurrency(kafkaProducerConsumerProps.getConsumerWithAutoCommitBatch().getConcurrency());
-        SeekToCurrentBatchErrorHandler errorHandler = new SeekToCurrentBatchErrorHandler();
+//        SeekToCurrentBatchErrorHandler errorHandler = new SeekToCurrentBatchErrorHandler();
+
 //        FixedBackOff fixedBackOff =
 //                new FixedBackOff(kafkaProducerConsumerProps.getConsumerWithAutoCommitBatch().getBackoffIntervalMillis(), kafkaProducerConsumerProps.getConsumerWithAutoCommitBatch().getRetryCount());
 //        errorHandler.setBackOff(fixedBackOff);

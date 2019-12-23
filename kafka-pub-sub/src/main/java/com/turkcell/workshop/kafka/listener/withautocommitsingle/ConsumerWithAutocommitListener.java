@@ -2,8 +2,9 @@ package com.turkcell.workshop.kafka.listener.withautocommitsingle;
 
 
 import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class ConsumerWithAutocommitListener {
 
     @KafkaListener(topics = "topic1", groupId = "ConsumerGroup1")

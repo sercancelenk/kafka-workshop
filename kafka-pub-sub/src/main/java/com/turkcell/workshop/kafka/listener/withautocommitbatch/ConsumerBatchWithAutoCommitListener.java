@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
-@Service
+//@Service
 @RequiredArgsConstructor
 @Slf4j
 public class ConsumerBatchWithAutoCommitListener {

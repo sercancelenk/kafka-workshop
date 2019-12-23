@@ -53,7 +53,7 @@ kafka:
       "[session.timeout.ms]": 10000
       "[heartbeat.interval.ms]": 3000
       "[enable.auto.commit]": false
-      "[auto.offset.reset]": earliest
+      "[auto.offset.reset]": latest
       "[fetch.max.bytes]": 52428800
       "[fetch.max.wait.ms]": 500
   consumer-with-autocommit-batch:
@@ -75,7 +75,7 @@ kafka:
       "[max.poll.interval.ms]": 30000
       "[session.timeout.ms]": 10000
       "[heartbeat.interval.ms]": 3000
-      "[enable.auto.commit]": false
+      "[enable.auto.commit]": true
       "[auto.offset.reset]": latest
       "[fetch.max.bytes]": 52428800
       "[fetch.max.wait.ms]": 500
